@@ -23,9 +23,9 @@ Code is bundled as eclipse project just clone it, and import in eclipse.
 12. Go to run configurations from eclipse and right click on java application create new named openfire now search main class using search button, select ```org.jivesoftware.openfire.starter.ServerStarter``` and click ok.
 13. Go to arguments tab and put VM arguments value as , ```-DopenfireHome="D:\workspaceluna\openfire"```
 14. Go to classpath tab , click on ```user entries``` > click on advanced button on left > select add folder and select following folders
-    *```openfire\build\lib\dist``` click ok.
-    *```openfire\resources\i18n``` click ok.
-    *```openfire\resources\jar``` click ok.
+    * ```openfire\build\lib\dist``` click ok.
+    * ```openfire\resources\i18n``` click ok.
+    * ```openfire\resources\jar``` click ok.
 15. Go to common tab and check the checkbox at debug and run. Click apply and close.
 16. Now copy web folder from workspace and paste in to ```workspace\plugins\admin``` folder and rename it to ```webapp```.
 
