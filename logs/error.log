@@ -1,0 +1,556 @@
+2015.05.05 17:32:34 org.jivesoftware.openfire.net.SSLConfig - SSLConfig startup problem.
+  storeType: [jks]
+  keyStoreLocation: [C:\wokspace\openfire\resources\security\keystore]
+  keypass: [changeit]
+
+java.io.FileNotFoundException: C:\wokspace\openfire\resources\security\keystore (The system cannot find the path specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.jivesoftware.openfire.net.SSLConfig.<clinit>(SSLConfig.java:108)
+	at org.jivesoftware.openfire.container.AdminConsolePlugin.startup(AdminConsolePlugin.java:138)
+	at org.jivesoftware.openfire.container.AdminConsolePlugin.initializePlugin(AdminConsolePlugin.java:216)
+	at org.jivesoftware.openfire.container.PluginManager.loadPlugin(PluginManager.java:483)
+	at org.jivesoftware.openfire.container.PluginManager.access$1(PluginManager.java:282)
+	at org.jivesoftware.openfire.container.PluginManager$PluginMonitor.run(PluginManager.java:1074)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2015.05.05 17:32:34 org.jivesoftware.openfire.net.SSLConfig - SSLConfig startup problem.
+  storeType: [jks]
+  s2sTrustStoreLocation: [C:\wokspace\openfire\resources\security\truststore]
+  s2sTrustpass: [changeit]
+
+java.io.FileNotFoundException: C:\wokspace\openfire\resources\security\truststore (The system cannot find the path specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.jivesoftware.openfire.net.SSLConfig.<clinit>(SSLConfig.java:121)
+	at org.jivesoftware.openfire.container.AdminConsolePlugin.startup(AdminConsolePlugin.java:138)
+	at org.jivesoftware.openfire.container.AdminConsolePlugin.initializePlugin(AdminConsolePlugin.java:216)
+	at org.jivesoftware.openfire.container.PluginManager.loadPlugin(PluginManager.java:483)
+	at org.jivesoftware.openfire.container.PluginManager.access$1(PluginManager.java:282)
+	at org.jivesoftware.openfire.container.PluginManager$PluginMonitor.run(PluginManager.java:1074)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2015.05.05 17:32:35 org.jivesoftware.openfire.container.AdminConsolePlugin - 
+java.io.IOException
+	at org.jivesoftware.openfire.net.SSLConfig.getKeyStore(SSLConfig.java:284)
+	at org.jivesoftware.openfire.container.AdminConsolePlugin.startup(AdminConsolePlugin.java:138)
+	at org.jivesoftware.openfire.container.AdminConsolePlugin.initializePlugin(AdminConsolePlugin.java:216)
+	at org.jivesoftware.openfire.container.PluginManager.loadPlugin(PluginManager.java:483)
+	at org.jivesoftware.openfire.container.PluginManager.access$1(PluginManager.java:282)
+	at org.jivesoftware.openfire.container.PluginManager$PluginMonitor.run(PluginManager.java:1074)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2015.05.05 17:32:49 org.jivesoftware.util.log.util.CommonsLogFactory - Javac exception 
+Unable to find a javac compiler;
+com.sun.tools.javac.Main is not on the classpath.
+Perhaps JAVA_HOME does not point to the JDK
+	at org.apache.tools.ant.taskdefs.compilers.CompilerAdapterFactory.getCompiler(CompilerAdapterFactory.java:105)
+	at org.apache.tools.ant.taskdefs.Javac.compile(Javac.java:924)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:757)
+	at org.apache.jasper.compiler.AntCompiler.generateClass(AntCompiler.java:219)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:297)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:276)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:264)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:563)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:303)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:314)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:264)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:547)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1359)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.doFilter(PageFilter.java:39)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1330)
+	at org.jivesoftware.util.LocaleFilter.doFilter(LocaleFilter.java:74)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1330)
+	at org.jivesoftware.util.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:50)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1330)
+	at org.jivesoftware.admin.PluginFilter.doFilter(PluginFilter.java:78)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1330)
+	at org.jivesoftware.admin.AuthCheckFilter.doFilter(AuthCheckFilter.java:164)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1330)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:478)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:520)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:941)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:409)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:875)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:250)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:149)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:110)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.HttpConnection.handleRequest(HttpConnection.java:441)
+	at org.eclipse.jetty.server.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:919)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:582)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:218)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:51)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:586)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:44)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:598)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:533)
+	at java.lang.Thread.run(Unknown Source)
+2015.05.05 17:32:49 org.jivesoftware.util.log.util.CommonsLogFactory - Env: Compile: javaFileName=/C:/Users/nishant.nawarkhede/AppData/Local/Temp/jetty-0.0.0.0-9090-webapp-_-any-/jsp//org/apache/jsp\login_jsp.java
+    classpath=/C:/wokspace/openfire/plugins/admin/webapp/WEB-INF/classes/;/C:/wokspace/openfire/plugins/admin/webapp/WEB-INF/lib/commons-fileupload.jar;/C:/wokspace/openfire/plugins/admin/webapp/WEB-INF/lib/commons-io.jar;/C:/wokspace/openfire/plugins/admin/webapp/WEB-INF/lib/dwr.jar;C:\Users\nishant.nawarkhede\AppData\Local\Temp\jetty-0.0.0.0-9090-webapp-_-any-\jsp;C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\classes;C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\commons-fileupload.jar;C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\commons-io.jar;C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\dwr.jar
+    cp=C:\wokspace\openfire\bin;C:\wokspace\openfire\build\lib\ant.jar;C:\wokspace\openfire\build\lib\ant-contrib.jar;C:\wokspace\openfire\build\lib\ant-jive-edition.jar;C:\wokspace\openfire\build\lib\ant-subdirtask.jar;C:\wokspace\openfire\build\lib\cglib-nodep.jar;C:\wokspace\openfire\build\lib\commons-el.jar;C:\wokspace\openfire\build\lib\i4jruntime.jar;C:\wokspace\openfire\build\lib\jasper-compiler.jar;C:\wokspace\openfire\build\lib\jasper-runtime.jar;C:\wokspace\openfire\build\lib\jaxb-api.jar;C:\wokspace\openfire\build\lib\jmock.jar;C:\wokspace\openfire\build\lib\jmock-junit4.jar;C:\wokspace\openfire\build\lib\jmock-legacy.jar;C:\wokspace\openfire\build\lib\junit.jar;C:\wokspace\openfire\build\lib\objenesis.jar;C:\wokspace\openfire\build\lib\pack200task.jar;C:\wokspace\openfire\build\lib\qdox.jar;C:\wokspace\openfire\build\lib\xmltask.jar;C:\wokspace\openfire\build\lib\dist\activation.jar;C:\wokspace\openfire\build\lib\dist\bcpg-jdk15on.jar;C:\wokspace\openfire\build\lib\dist\bcpkix-jdk15on.jar;C:\wokspace\openfire\build\lib\dist\bcprov-jdk15on.jar;C:\wokspace\openfire\build\lib\dist\hsqldb.jar;C:\wokspace\openfire\build\lib\dist\jdic.jar;C:\wokspace\openfire\build\lib\dist\jtds.jar;C:\wokspace\openfire\build\lib\dist\mail.jar;C:\wokspace\openfire\build\lib\dist\mysql.jar;C:\wokspace\openfire\build\lib\dist\postgres.jar;C:\wokspace\openfire\build\lib\dist\servlet.jar;C:\wokspace\openfire\build\lib\dist\slf4j-log4j12.jar;C:\wokspace\openfire\build\lib\merge\commons-codec.jar;C:\wokspace\openfire\build\lib\merge\commons-httpclient.jar;C:\wokspace\openfire\build\lib\merge\commons-lang.jar;C:\wokspace\openfire\build\lib\merge\commons-logging.jar;C:\wokspace\openfire\build\lib\merge\concurrentlinkedhashmap-lru-1.0_jdk5.jar;C:\wokspace\openfire\build\lib\merge\dbutil.jar;C:\wokspace\openfire\build\lib\merge\dom4j.jar;C:\wokspace\openfire\build\lib\merge\jaxen.jar;C:\wokspace\openfire\build\lib\merge\jdom.jar;C:\wokspace\openfire\build\lib\merge\jetty-continuation.jar;C:\wokspace\openfire\build\lib\merge\jetty-http.jar;C:\wokspace\openfire\build\lib\merge\jetty-io.jar;C:\wokspace\openfire\build\lib\merge\jetty-jmx.jar;C:\wokspace\openfire\build\lib\merge\jetty-security.jar;C:\wokspace\openfire\build\lib\merge\jetty-server.jar;C:\wokspace\openfire\build\lib\merge\jetty-servlet.jar;C:\wokspace\openfire\build\lib\merge\jetty-util.jar;C:\wokspace\openfire\build\lib\merge\jetty-webapp.jar;C:\wokspace\openfire\build\lib\merge\jetty-websocket.jar;C:\wokspace\openfire\build\lib\merge\jetty-xml.jar;C:\wokspace\openfire\build\lib\merge\jmdns.jar;C:\wokspace\openfire\build\lib\merge\jsp-api.jar;C:\wokspace\openfire\build\lib\merge\jstl.jar;C:\wokspace\openfire\build\lib\merge\jzlib.jar;C:\wokspace\openfire\build\lib\merge\libidn.jar;C:\wokspace\openfire\build\lib\merge\log4j.jar;C:\wokspace\openfire\build\lib\merge\mina-core.jar;C:\wokspace\openfire\build\lib\merge\mina-filter-compression.jar;C:\wokspace\openfire\build\lib\merge\mina-filter-ssl.jar;C:\wokspace\openfire\build\lib\merge\mina-integration-jmx.jar;C:\wokspace\openfire\build\lib\merge\proxool.jar;C:\wokspace\openfire\build\lib\merge\rome.jar;C:\wokspace\openfire\build\lib\merge\rome-fetcher.jar;C:\wokspace\openfire\build\lib\merge\shaj.jar;C:\wokspace\openfire\build\lib\merge\sitemesh.jar;C:\wokspace\openfire\build\lib\merge\slf4j-api.jar;C:\wokspace\openfire\build\lib\merge\standard.jar;C:\wokspace\openfire\build\lib\merge\stringprep.jar;C:\wokspace\openfire\build\lib\merge\tinder.jar;C:\wokspace\openfire\build\lib\merge\xpp3.jar;C:\wokspace\openfire\build\lib\src\commons-lang-sources.jar;C:\wokspace\openfire\build\lib\src\mina-core-1.1.7-sources.jar;C:\wokspace\openfire\build\lib\src\mina-filter-compression-1.1.7-sources.jar;C:\wokspace\openfire\build\lib\src\mina-filter-ssl-1.1.7-sources.jar;C:\wokspace\openfire\build\lib\src\mina-filter-ssl-1.1.8-SNAPSHOT-sources.jar;C:\wokspace\openfire\build\lib\src\mina-integration-jmx-1.1.7-sources.jar;C:\wokspace\openfire\build\lib\src\slf4j-api-1.5.8-sources.jar;C:\wokspace\openfire\build\lib\src\slf4j-log4j12-1.5.8-sources.jar;C:\wokspace\openfire\build\lib\dist;C:\wokspace\openfire\resources\i18n;C:\wokspace\openfire\resources\jar
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\classes
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\commons-fileupload.jar
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\commons-io.jar
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\dwr.jar
+    cp=C:\Users\nishant.nawarkhede\AppData\Local\Temp\jetty-0.0.0.0-9090-webapp-_-any-\jsp
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\classes
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\commons-fileupload.jar
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\commons-io.jar
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\dwr.jar
+    work dir=C:\Users\nishant.nawarkhede\AppData\Local\Temp\jetty-0.0.0.0-9090-webapp-_-any-\jsp
+    extension dir=C:\Program Files\Java\jre1.8.0_31\lib\ext;C:\Windows\Sun\Java\lib\ext
+    srcDir=C:\Users\nishant.nawarkhede\AppData\Local\Temp\jetty-0.0.0.0-9090-webapp-_-any-\jsp
+   compilerTargetVM=1.5
+   compilerSourceVM=1.5
+    include=org/apache/jsp/login_jsp.java
+
+2015.05.05 17:32:49 org.jivesoftware.util.log.util.CommonsLogFactory - Error compiling file: /C:/Users/nishant.nawarkhede/AppData/Local/Temp/jetty-0.0.0.0-9090-webapp-_-any-/jsp//org/apache/jsp\login_jsp.java     [javac] Compiling 1 source file
+
+
+2015.05.05 17:34:01 org.jivesoftware.util.log.util.CommonsLogFactory - Javac exception 
+Unable to find a javac compiler;
+com.sun.tools.javac.Main is not on the classpath.
+Perhaps JAVA_HOME does not point to the JDK
+	at org.apache.tools.ant.taskdefs.compilers.CompilerAdapterFactory.getCompiler(CompilerAdapterFactory.java:105)
+	at org.apache.tools.ant.taskdefs.Javac.compile(Javac.java:924)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:757)
+	at org.apache.jasper.compiler.AntCompiler.generateClass(AntCompiler.java:219)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:297)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:276)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:264)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:563)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:303)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:314)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:264)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:547)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1359)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.doFilter(PageFilter.java:39)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1330)
+	at org.jivesoftware.util.LocaleFilter.doFilter(LocaleFilter.java:74)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1330)
+	at org.jivesoftware.util.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:50)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1330)
+	at org.jivesoftware.admin.PluginFilter.doFilter(PluginFilter.java:78)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1330)
+	at org.jivesoftware.admin.AuthCheckFilter.doFilter(AuthCheckFilter.java:164)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1330)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:478)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:520)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:941)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:409)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:875)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:250)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:149)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:110)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.HttpConnection.handleRequest(HttpConnection.java:441)
+	at org.eclipse.jetty.server.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:919)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:582)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:218)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:51)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:586)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:44)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:598)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:533)
+	at java.lang.Thread.run(Unknown Source)
+2015.05.05 17:34:02 org.jivesoftware.util.log.util.CommonsLogFactory - Env: Compile: javaFileName=/C:/Users/nishant.nawarkhede/AppData/Local/Temp/jetty-0.0.0.0-9090-webapp-_-any-/jsp//org/apache/jsp\login_jsp.java
+    classpath=/C:/wokspace/openfire/plugins/admin/webapp/WEB-INF/classes/;/C:/wokspace/openfire/plugins/admin/webapp/WEB-INF/lib/commons-fileupload.jar;/C:/wokspace/openfire/plugins/admin/webapp/WEB-INF/lib/commons-io.jar;/C:/wokspace/openfire/plugins/admin/webapp/WEB-INF/lib/dwr.jar;C:\Users\nishant.nawarkhede\AppData\Local\Temp\jetty-0.0.0.0-9090-webapp-_-any-\jsp;C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\classes;C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\commons-fileupload.jar;C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\commons-io.jar;C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\dwr.jar
+    cp=C:\wokspace\openfire\bin;C:\wokspace\openfire\build\lib\ant.jar;C:\wokspace\openfire\build\lib\ant-contrib.jar;C:\wokspace\openfire\build\lib\ant-jive-edition.jar;C:\wokspace\openfire\build\lib\ant-subdirtask.jar;C:\wokspace\openfire\build\lib\cglib-nodep.jar;C:\wokspace\openfire\build\lib\commons-el.jar;C:\wokspace\openfire\build\lib\i4jruntime.jar;C:\wokspace\openfire\build\lib\jasper-compiler.jar;C:\wokspace\openfire\build\lib\jasper-runtime.jar;C:\wokspace\openfire\build\lib\jaxb-api.jar;C:\wokspace\openfire\build\lib\jmock.jar;C:\wokspace\openfire\build\lib\jmock-junit4.jar;C:\wokspace\openfire\build\lib\jmock-legacy.jar;C:\wokspace\openfire\build\lib\junit.jar;C:\wokspace\openfire\build\lib\objenesis.jar;C:\wokspace\openfire\build\lib\pack200task.jar;C:\wokspace\openfire\build\lib\qdox.jar;C:\wokspace\openfire\build\lib\xmltask.jar;C:\wokspace\openfire\build\lib\dist\activation.jar;C:\wokspace\openfire\build\lib\dist\bcpg-jdk15on.jar;C:\wokspace\openfire\build\lib\dist\bcpkix-jdk15on.jar;C:\wokspace\openfire\build\lib\dist\bcprov-jdk15on.jar;C:\wokspace\openfire\build\lib\dist\hsqldb.jar;C:\wokspace\openfire\build\lib\dist\jdic.jar;C:\wokspace\openfire\build\lib\dist\jtds.jar;C:\wokspace\openfire\build\lib\dist\mail.jar;C:\wokspace\openfire\build\lib\dist\mysql.jar;C:\wokspace\openfire\build\lib\dist\postgres.jar;C:\wokspace\openfire\build\lib\dist\servlet.jar;C:\wokspace\openfire\build\lib\dist\slf4j-log4j12.jar;C:\wokspace\openfire\build\lib\merge\commons-codec.jar;C:\wokspace\openfire\build\lib\merge\commons-httpclient.jar;C:\wokspace\openfire\build\lib\merge\commons-lang.jar;C:\wokspace\openfire\build\lib\merge\commons-logging.jar;C:\wokspace\openfire\build\lib\merge\concurrentlinkedhashmap-lru-1.0_jdk5.jar;C:\wokspace\openfire\build\lib\merge\dbutil.jar;C:\wokspace\openfire\build\lib\merge\dom4j.jar;C:\wokspace\openfire\build\lib\merge\jaxen.jar;C:\wokspace\openfire\build\lib\merge\jdom.jar;C:\wokspace\openfire\build\lib\merge\jetty-continuation.jar;C:\wokspace\openfire\build\lib\merge\jetty-http.jar;C:\wokspace\openfire\build\lib\merge\jetty-io.jar;C:\wokspace\openfire\build\lib\merge\jetty-jmx.jar;C:\wokspace\openfire\build\lib\merge\jetty-security.jar;C:\wokspace\openfire\build\lib\merge\jetty-server.jar;C:\wokspace\openfire\build\lib\merge\jetty-servlet.jar;C:\wokspace\openfire\build\lib\merge\jetty-util.jar;C:\wokspace\openfire\build\lib\merge\jetty-webapp.jar;C:\wokspace\openfire\build\lib\merge\jetty-websocket.jar;C:\wokspace\openfire\build\lib\merge\jetty-xml.jar;C:\wokspace\openfire\build\lib\merge\jmdns.jar;C:\wokspace\openfire\build\lib\merge\jsp-api.jar;C:\wokspace\openfire\build\lib\merge\jstl.jar;C:\wokspace\openfire\build\lib\merge\jzlib.jar;C:\wokspace\openfire\build\lib\merge\libidn.jar;C:\wokspace\openfire\build\lib\merge\log4j.jar;C:\wokspace\openfire\build\lib\merge\mina-core.jar;C:\wokspace\openfire\build\lib\merge\mina-filter-compression.jar;C:\wokspace\openfire\build\lib\merge\mina-filter-ssl.jar;C:\wokspace\openfire\build\lib\merge\mina-integration-jmx.jar;C:\wokspace\openfire\build\lib\merge\proxool.jar;C:\wokspace\openfire\build\lib\merge\rome.jar;C:\wokspace\openfire\build\lib\merge\rome-fetcher.jar;C:\wokspace\openfire\build\lib\merge\shaj.jar;C:\wokspace\openfire\build\lib\merge\sitemesh.jar;C:\wokspace\openfire\build\lib\merge\slf4j-api.jar;C:\wokspace\openfire\build\lib\merge\standard.jar;C:\wokspace\openfire\build\lib\merge\stringprep.jar;C:\wokspace\openfire\build\lib\merge\tinder.jar;C:\wokspace\openfire\build\lib\merge\xpp3.jar;C:\wokspace\openfire\build\lib\src\commons-lang-sources.jar;C:\wokspace\openfire\build\lib\src\mina-core-1.1.7-sources.jar;C:\wokspace\openfire\build\lib\src\mina-filter-compression-1.1.7-sources.jar;C:\wokspace\openfire\build\lib\src\mina-filter-ssl-1.1.7-sources.jar;C:\wokspace\openfire\build\lib\src\mina-filter-ssl-1.1.8-SNAPSHOT-sources.jar;C:\wokspace\openfire\build\lib\src\mina-integration-jmx-1.1.7-sources.jar;C:\wokspace\openfire\build\lib\src\slf4j-api-1.5.8-sources.jar;C:\wokspace\openfire\build\lib\src\slf4j-log4j12-1.5.8-sources.jar;C:\wokspace\openfire\build\lib\dist;C:\wokspace\openfire\resources\i18n;C:\wokspace\openfire\resources\jar
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\classes
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\commons-fileupload.jar
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\commons-io.jar
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\dwr.jar
+    cp=C:\Users\nishant.nawarkhede\AppData\Local\Temp\jetty-0.0.0.0-9090-webapp-_-any-\jsp
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\classes
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\commons-fileupload.jar
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\commons-io.jar
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\dwr.jar
+    work dir=C:\Users\nishant.nawarkhede\AppData\Local\Temp\jetty-0.0.0.0-9090-webapp-_-any-\jsp
+    extension dir=C:\Program Files\Java\jre1.8.0_31\lib\ext;C:\Windows\Sun\Java\lib\ext
+    srcDir=C:\Users\nishant.nawarkhede\AppData\Local\Temp\jetty-0.0.0.0-9090-webapp-_-any-\jsp
+   compilerTargetVM=1.5
+   compilerSourceVM=1.5
+    include=org/apache/jsp/login_jsp.java
+
+2015.05.05 17:34:02 org.jivesoftware.util.log.util.CommonsLogFactory - Error compiling file: /C:/Users/nishant.nawarkhede/AppData/Local/Temp/jetty-0.0.0.0-9090-webapp-_-any-/jsp//org/apache/jsp\login_jsp.java     [javac] Compiling 1 source file
+
+
+2015.05.05 17:35:26 org.jivesoftware.util.log.util.CommonsLogFactory - Javac exception 
+Unable to find a javac compiler;
+com.sun.tools.javac.Main is not on the classpath.
+Perhaps JAVA_HOME does not point to the JDK
+	at org.apache.tools.ant.taskdefs.compilers.CompilerAdapterFactory.getCompiler(CompilerAdapterFactory.java:105)
+	at org.apache.tools.ant.taskdefs.Javac.compile(Javac.java:924)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:757)
+	at org.apache.jasper.compiler.AntCompiler.generateClass(AntCompiler.java:219)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:297)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:276)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:264)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:563)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:303)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:314)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:264)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:547)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1359)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.doFilter(PageFilter.java:39)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1330)
+	at org.jivesoftware.util.LocaleFilter.doFilter(LocaleFilter.java:74)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1330)
+	at org.jivesoftware.util.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:50)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1330)
+	at org.jivesoftware.admin.PluginFilter.doFilter(PluginFilter.java:78)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1330)
+	at org.jivesoftware.admin.AuthCheckFilter.doFilter(AuthCheckFilter.java:164)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1330)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:478)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:520)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:941)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:409)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:875)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:250)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:149)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:110)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.HttpConnection.handleRequest(HttpConnection.java:441)
+	at org.eclipse.jetty.server.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:919)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:582)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:218)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:51)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:586)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:44)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:598)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:533)
+	at java.lang.Thread.run(Unknown Source)
+2015.05.05 17:35:26 org.jivesoftware.util.log.util.CommonsLogFactory - Env: Compile: javaFileName=/C:/Users/nishant.nawarkhede/AppData/Local/Temp/jetty-0.0.0.0-9090-webapp-_-any-/jsp//org/apache/jsp\login_jsp.java
+    classpath=/C:/wokspace/openfire/plugins/admin/webapp/WEB-INF/classes/;/C:/wokspace/openfire/plugins/admin/webapp/WEB-INF/lib/commons-fileupload.jar;/C:/wokspace/openfire/plugins/admin/webapp/WEB-INF/lib/commons-io.jar;/C:/wokspace/openfire/plugins/admin/webapp/WEB-INF/lib/dwr.jar;C:\Users\nishant.nawarkhede\AppData\Local\Temp\jetty-0.0.0.0-9090-webapp-_-any-\jsp;C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\classes;C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\commons-fileupload.jar;C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\commons-io.jar;C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\dwr.jar
+    cp=C:\wokspace\openfire\bin;C:\wokspace\openfire\build\lib\ant.jar;C:\wokspace\openfire\build\lib\ant-contrib.jar;C:\wokspace\openfire\build\lib\ant-jive-edition.jar;C:\wokspace\openfire\build\lib\ant-subdirtask.jar;C:\wokspace\openfire\build\lib\cglib-nodep.jar;C:\wokspace\openfire\build\lib\commons-el.jar;C:\wokspace\openfire\build\lib\i4jruntime.jar;C:\wokspace\openfire\build\lib\jasper-compiler.jar;C:\wokspace\openfire\build\lib\jasper-runtime.jar;C:\wokspace\openfire\build\lib\jaxb-api.jar;C:\wokspace\openfire\build\lib\jmock.jar;C:\wokspace\openfire\build\lib\jmock-junit4.jar;C:\wokspace\openfire\build\lib\jmock-legacy.jar;C:\wokspace\openfire\build\lib\junit.jar;C:\wokspace\openfire\build\lib\objenesis.jar;C:\wokspace\openfire\build\lib\pack200task.jar;C:\wokspace\openfire\build\lib\qdox.jar;C:\wokspace\openfire\build\lib\xmltask.jar;C:\wokspace\openfire\build\lib\dist\activation.jar;C:\wokspace\openfire\build\lib\dist\bcpg-jdk15on.jar;C:\wokspace\openfire\build\lib\dist\bcpkix-jdk15on.jar;C:\wokspace\openfire\build\lib\dist\bcprov-jdk15on.jar;C:\wokspace\openfire\build\lib\dist\hsqldb.jar;C:\wokspace\openfire\build\lib\dist\jdic.jar;C:\wokspace\openfire\build\lib\dist\jtds.jar;C:\wokspace\openfire\build\lib\dist\mail.jar;C:\wokspace\openfire\build\lib\dist\mysql.jar;C:\wokspace\openfire\build\lib\dist\postgres.jar;C:\wokspace\openfire\build\lib\dist\servlet.jar;C:\wokspace\openfire\build\lib\dist\slf4j-log4j12.jar;C:\wokspace\openfire\build\lib\merge\commons-codec.jar;C:\wokspace\openfire\build\lib\merge\commons-httpclient.jar;C:\wokspace\openfire\build\lib\merge\commons-lang.jar;C:\wokspace\openfire\build\lib\merge\commons-logging.jar;C:\wokspace\openfire\build\lib\merge\concurrentlinkedhashmap-lru-1.0_jdk5.jar;C:\wokspace\openfire\build\lib\merge\dbutil.jar;C:\wokspace\openfire\build\lib\merge\dom4j.jar;C:\wokspace\openfire\build\lib\merge\jaxen.jar;C:\wokspace\openfire\build\lib\merge\jdom.jar;C:\wokspace\openfire\build\lib\merge\jetty-continuation.jar;C:\wokspace\openfire\build\lib\merge\jetty-http.jar;C:\wokspace\openfire\build\lib\merge\jetty-io.jar;C:\wokspace\openfire\build\lib\merge\jetty-jmx.jar;C:\wokspace\openfire\build\lib\merge\jetty-security.jar;C:\wokspace\openfire\build\lib\merge\jetty-server.jar;C:\wokspace\openfire\build\lib\merge\jetty-servlet.jar;C:\wokspace\openfire\build\lib\merge\jetty-util.jar;C:\wokspace\openfire\build\lib\merge\jetty-webapp.jar;C:\wokspace\openfire\build\lib\merge\jetty-websocket.jar;C:\wokspace\openfire\build\lib\merge\jetty-xml.jar;C:\wokspace\openfire\build\lib\merge\jmdns.jar;C:\wokspace\openfire\build\lib\merge\jsp-api.jar;C:\wokspace\openfire\build\lib\merge\jstl.jar;C:\wokspace\openfire\build\lib\merge\jzlib.jar;C:\wokspace\openfire\build\lib\merge\libidn.jar;C:\wokspace\openfire\build\lib\merge\log4j.jar;C:\wokspace\openfire\build\lib\merge\mina-core.jar;C:\wokspace\openfire\build\lib\merge\mina-filter-compression.jar;C:\wokspace\openfire\build\lib\merge\mina-filter-ssl.jar;C:\wokspace\openfire\build\lib\merge\mina-integration-jmx.jar;C:\wokspace\openfire\build\lib\merge\proxool.jar;C:\wokspace\openfire\build\lib\merge\rome.jar;C:\wokspace\openfire\build\lib\merge\rome-fetcher.jar;C:\wokspace\openfire\build\lib\merge\shaj.jar;C:\wokspace\openfire\build\lib\merge\sitemesh.jar;C:\wokspace\openfire\build\lib\merge\slf4j-api.jar;C:\wokspace\openfire\build\lib\merge\standard.jar;C:\wokspace\openfire\build\lib\merge\stringprep.jar;C:\wokspace\openfire\build\lib\merge\tinder.jar;C:\wokspace\openfire\build\lib\merge\xpp3.jar;C:\wokspace\openfire\build\lib\src\commons-lang-sources.jar;C:\wokspace\openfire\build\lib\src\mina-core-1.1.7-sources.jar;C:\wokspace\openfire\build\lib\src\mina-filter-compression-1.1.7-sources.jar;C:\wokspace\openfire\build\lib\src\mina-filter-ssl-1.1.7-sources.jar;C:\wokspace\openfire\build\lib\src\mina-filter-ssl-1.1.8-SNAPSHOT-sources.jar;C:\wokspace\openfire\build\lib\src\mina-integration-jmx-1.1.7-sources.jar;C:\wokspace\openfire\build\lib\src\slf4j-api-1.5.8-sources.jar;C:\wokspace\openfire\build\lib\src\slf4j-log4j12-1.5.8-sources.jar;C:\wokspace\openfire\build\lib\dist;C:\wokspace\openfire\resources\i18n;C:\wokspace\openfire\resources\jar
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\classes
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\commons-fileupload.jar
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\commons-io.jar
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\dwr.jar
+    cp=C:\Users\nishant.nawarkhede\AppData\Local\Temp\jetty-0.0.0.0-9090-webapp-_-any-\jsp
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\classes
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\commons-fileupload.jar
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\commons-io.jar
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\dwr.jar
+    work dir=C:\Users\nishant.nawarkhede\AppData\Local\Temp\jetty-0.0.0.0-9090-webapp-_-any-\jsp
+    extension dir=C:\Program Files\Java\jre1.8.0_31\lib\ext;C:\Windows\Sun\Java\lib\ext
+    srcDir=C:\Users\nishant.nawarkhede\AppData\Local\Temp\jetty-0.0.0.0-9090-webapp-_-any-\jsp
+   compilerTargetVM=1.5
+   compilerSourceVM=1.5
+    include=org/apache/jsp/login_jsp.java
+
+2015.05.05 17:35:26 org.jivesoftware.util.log.util.CommonsLogFactory - Error compiling file: /C:/Users/nishant.nawarkhede/AppData/Local/Temp/jetty-0.0.0.0-9090-webapp-_-any-/jsp//org/apache/jsp\login_jsp.java     [javac] Compiling 1 source file
+
+
+2015.05.05 17:35:30 org.jivesoftware.util.log.util.CommonsLogFactory - Javac exception 
+Unable to find a javac compiler;
+com.sun.tools.javac.Main is not on the classpath.
+Perhaps JAVA_HOME does not point to the JDK
+	at org.apache.tools.ant.taskdefs.compilers.CompilerAdapterFactory.getCompiler(CompilerAdapterFactory.java:105)
+	at org.apache.tools.ant.taskdefs.Javac.compile(Javac.java:924)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:757)
+	at org.apache.jasper.compiler.AntCompiler.generateClass(AntCompiler.java:219)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:297)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:276)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:264)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:563)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:303)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:314)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:264)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:547)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1359)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.doFilter(PageFilter.java:39)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1330)
+	at org.jivesoftware.util.LocaleFilter.doFilter(LocaleFilter.java:74)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1330)
+	at org.jivesoftware.util.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:50)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1330)
+	at org.jivesoftware.admin.PluginFilter.doFilter(PluginFilter.java:78)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1330)
+	at org.jivesoftware.admin.AuthCheckFilter.doFilter(AuthCheckFilter.java:164)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1330)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:478)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:520)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:941)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:409)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:875)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:250)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:149)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:110)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.HttpConnection.handleRequest(HttpConnection.java:441)
+	at org.eclipse.jetty.server.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:919)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:582)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:218)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:51)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:586)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:44)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:598)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:533)
+	at java.lang.Thread.run(Unknown Source)
+2015.05.05 17:35:30 org.jivesoftware.util.log.util.CommonsLogFactory - Env: Compile: javaFileName=/C:/Users/nishant.nawarkhede/AppData/Local/Temp/jetty-0.0.0.0-9090-webapp-_-any-/jsp//org/apache/jsp\login_jsp.java
+    classpath=/C:/wokspace/openfire/plugins/admin/webapp/WEB-INF/classes/;/C:/wokspace/openfire/plugins/admin/webapp/WEB-INF/lib/commons-fileupload.jar;/C:/wokspace/openfire/plugins/admin/webapp/WEB-INF/lib/commons-io.jar;/C:/wokspace/openfire/plugins/admin/webapp/WEB-INF/lib/dwr.jar;C:\Users\nishant.nawarkhede\AppData\Local\Temp\jetty-0.0.0.0-9090-webapp-_-any-\jsp;C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\classes;C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\commons-fileupload.jar;C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\commons-io.jar;C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\dwr.jar
+    cp=C:\wokspace\openfire\bin;C:\wokspace\openfire\build\lib\ant.jar;C:\wokspace\openfire\build\lib\ant-contrib.jar;C:\wokspace\openfire\build\lib\ant-jive-edition.jar;C:\wokspace\openfire\build\lib\ant-subdirtask.jar;C:\wokspace\openfire\build\lib\cglib-nodep.jar;C:\wokspace\openfire\build\lib\commons-el.jar;C:\wokspace\openfire\build\lib\i4jruntime.jar;C:\wokspace\openfire\build\lib\jasper-compiler.jar;C:\wokspace\openfire\build\lib\jasper-runtime.jar;C:\wokspace\openfire\build\lib\jaxb-api.jar;C:\wokspace\openfire\build\lib\jmock.jar;C:\wokspace\openfire\build\lib\jmock-junit4.jar;C:\wokspace\openfire\build\lib\jmock-legacy.jar;C:\wokspace\openfire\build\lib\junit.jar;C:\wokspace\openfire\build\lib\objenesis.jar;C:\wokspace\openfire\build\lib\pack200task.jar;C:\wokspace\openfire\build\lib\qdox.jar;C:\wokspace\openfire\build\lib\xmltask.jar;C:\wokspace\openfire\build\lib\dist\activation.jar;C:\wokspace\openfire\build\lib\dist\bcpg-jdk15on.jar;C:\wokspace\openfire\build\lib\dist\bcpkix-jdk15on.jar;C:\wokspace\openfire\build\lib\dist\bcprov-jdk15on.jar;C:\wokspace\openfire\build\lib\dist\hsqldb.jar;C:\wokspace\openfire\build\lib\dist\jdic.jar;C:\wokspace\openfire\build\lib\dist\jtds.jar;C:\wokspace\openfire\build\lib\dist\mail.jar;C:\wokspace\openfire\build\lib\dist\mysql.jar;C:\wokspace\openfire\build\lib\dist\postgres.jar;C:\wokspace\openfire\build\lib\dist\servlet.jar;C:\wokspace\openfire\build\lib\dist\slf4j-log4j12.jar;C:\wokspace\openfire\build\lib\merge\commons-codec.jar;C:\wokspace\openfire\build\lib\merge\commons-httpclient.jar;C:\wokspace\openfire\build\lib\merge\commons-lang.jar;C:\wokspace\openfire\build\lib\merge\commons-logging.jar;C:\wokspace\openfire\build\lib\merge\concurrentlinkedhashmap-lru-1.0_jdk5.jar;C:\wokspace\openfire\build\lib\merge\dbutil.jar;C:\wokspace\openfire\build\lib\merge\dom4j.jar;C:\wokspace\openfire\build\lib\merge\jaxen.jar;C:\wokspace\openfire\build\lib\merge\jdom.jar;C:\wokspace\openfire\build\lib\merge\jetty-continuation.jar;C:\wokspace\openfire\build\lib\merge\jetty-http.jar;C:\wokspace\openfire\build\lib\merge\jetty-io.jar;C:\wokspace\openfire\build\lib\merge\jetty-jmx.jar;C:\wokspace\openfire\build\lib\merge\jetty-security.jar;C:\wokspace\openfire\build\lib\merge\jetty-server.jar;C:\wokspace\openfire\build\lib\merge\jetty-servlet.jar;C:\wokspace\openfire\build\lib\merge\jetty-util.jar;C:\wokspace\openfire\build\lib\merge\jetty-webapp.jar;C:\wokspace\openfire\build\lib\merge\jetty-websocket.jar;C:\wokspace\openfire\build\lib\merge\jetty-xml.jar;C:\wokspace\openfire\build\lib\merge\jmdns.jar;C:\wokspace\openfire\build\lib\merge\jsp-api.jar;C:\wokspace\openfire\build\lib\merge\jstl.jar;C:\wokspace\openfire\build\lib\merge\jzlib.jar;C:\wokspace\openfire\build\lib\merge\libidn.jar;C:\wokspace\openfire\build\lib\merge\log4j.jar;C:\wokspace\openfire\build\lib\merge\mina-core.jar;C:\wokspace\openfire\build\lib\merge\mina-filter-compression.jar;C:\wokspace\openfire\build\lib\merge\mina-filter-ssl.jar;C:\wokspace\openfire\build\lib\merge\mina-integration-jmx.jar;C:\wokspace\openfire\build\lib\merge\proxool.jar;C:\wokspace\openfire\build\lib\merge\rome.jar;C:\wokspace\openfire\build\lib\merge\rome-fetcher.jar;C:\wokspace\openfire\build\lib\merge\shaj.jar;C:\wokspace\openfire\build\lib\merge\sitemesh.jar;C:\wokspace\openfire\build\lib\merge\slf4j-api.jar;C:\wokspace\openfire\build\lib\merge\standard.jar;C:\wokspace\openfire\build\lib\merge\stringprep.jar;C:\wokspace\openfire\build\lib\merge\tinder.jar;C:\wokspace\openfire\build\lib\merge\xpp3.jar;C:\wokspace\openfire\build\lib\src\commons-lang-sources.jar;C:\wokspace\openfire\build\lib\src\mina-core-1.1.7-sources.jar;C:\wokspace\openfire\build\lib\src\mina-filter-compression-1.1.7-sources.jar;C:\wokspace\openfire\build\lib\src\mina-filter-ssl-1.1.7-sources.jar;C:\wokspace\openfire\build\lib\src\mina-filter-ssl-1.1.8-SNAPSHOT-sources.jar;C:\wokspace\openfire\build\lib\src\mina-integration-jmx-1.1.7-sources.jar;C:\wokspace\openfire\build\lib\src\slf4j-api-1.5.8-sources.jar;C:\wokspace\openfire\build\lib\src\slf4j-log4j12-1.5.8-sources.jar;C:\wokspace\openfire\build\lib\dist;C:\wokspace\openfire\resources\i18n;C:\wokspace\openfire\resources\jar
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\classes
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\commons-fileupload.jar
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\commons-io.jar
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\dwr.jar
+    cp=C:\Users\nishant.nawarkhede\AppData\Local\Temp\jetty-0.0.0.0-9090-webapp-_-any-\jsp
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\classes
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\commons-fileupload.jar
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\commons-io.jar
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\dwr.jar
+    work dir=C:\Users\nishant.nawarkhede\AppData\Local\Temp\jetty-0.0.0.0-9090-webapp-_-any-\jsp
+    extension dir=C:\Program Files\Java\jre1.8.0_31\lib\ext;C:\Windows\Sun\Java\lib\ext
+    srcDir=C:\Users\nishant.nawarkhede\AppData\Local\Temp\jetty-0.0.0.0-9090-webapp-_-any-\jsp
+   compilerTargetVM=1.5
+   compilerSourceVM=1.5
+    include=org/apache/jsp/login_jsp.java
+
+2015.05.05 17:35:30 org.jivesoftware.util.log.util.CommonsLogFactory - Error compiling file: /C:/Users/nishant.nawarkhede/AppData/Local/Temp/jetty-0.0.0.0-9090-webapp-_-any-/jsp//org/apache/jsp\login_jsp.java     [javac] Compiling 1 source file
+
+
+2015.05.05 17:36:06 org.jivesoftware.util.log.util.CommonsLogFactory - Javac exception 
+Unable to find a javac compiler;
+com.sun.tools.javac.Main is not on the classpath.
+Perhaps JAVA_HOME does not point to the JDK
+	at org.apache.tools.ant.taskdefs.compilers.CompilerAdapterFactory.getCompiler(CompilerAdapterFactory.java:105)
+	at org.apache.tools.ant.taskdefs.Javac.compile(Javac.java:924)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:757)
+	at org.apache.jasper.compiler.AntCompiler.generateClass(AntCompiler.java:219)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:297)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:276)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:264)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:563)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:303)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:314)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:264)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:547)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1359)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.doFilter(PageFilter.java:39)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1330)
+	at org.jivesoftware.util.LocaleFilter.doFilter(LocaleFilter.java:74)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1330)
+	at org.jivesoftware.util.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:50)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1330)
+	at org.jivesoftware.admin.PluginFilter.doFilter(PluginFilter.java:78)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1330)
+	at org.jivesoftware.admin.AuthCheckFilter.doFilter(AuthCheckFilter.java:164)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1330)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:478)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:520)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:941)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:409)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:875)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:250)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:149)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:110)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.HttpConnection.handleRequest(HttpConnection.java:441)
+	at org.eclipse.jetty.server.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:919)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:582)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:218)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:51)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:586)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:44)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:598)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:533)
+	at java.lang.Thread.run(Unknown Source)
+2015.05.05 17:36:06 org.jivesoftware.util.log.util.CommonsLogFactory - Env: Compile: javaFileName=/C:/Users/nishant.nawarkhede/AppData/Local/Temp/jetty-0.0.0.0-9090-webapp-_-any-/jsp//org/apache/jsp\login_jsp.java
+    classpath=/C:/wokspace/openfire/plugins/admin/webapp/WEB-INF/classes/;/C:/wokspace/openfire/plugins/admin/webapp/WEB-INF/lib/commons-fileupload.jar;/C:/wokspace/openfire/plugins/admin/webapp/WEB-INF/lib/commons-io.jar;/C:/wokspace/openfire/plugins/admin/webapp/WEB-INF/lib/dwr.jar;C:\Users\nishant.nawarkhede\AppData\Local\Temp\jetty-0.0.0.0-9090-webapp-_-any-\jsp;C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\classes;C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\commons-fileupload.jar;C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\commons-io.jar;C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\dwr.jar
+    cp=C:\wokspace\openfire\bin;C:\wokspace\openfire\build\lib\ant.jar;C:\wokspace\openfire\build\lib\ant-contrib.jar;C:\wokspace\openfire\build\lib\ant-jive-edition.jar;C:\wokspace\openfire\build\lib\ant-subdirtask.jar;C:\wokspace\openfire\build\lib\cglib-nodep.jar;C:\wokspace\openfire\build\lib\commons-el.jar;C:\wokspace\openfire\build\lib\i4jruntime.jar;C:\wokspace\openfire\build\lib\jasper-compiler.jar;C:\wokspace\openfire\build\lib\jasper-runtime.jar;C:\wokspace\openfire\build\lib\jaxb-api.jar;C:\wokspace\openfire\build\lib\jmock.jar;C:\wokspace\openfire\build\lib\jmock-junit4.jar;C:\wokspace\openfire\build\lib\jmock-legacy.jar;C:\wokspace\openfire\build\lib\junit.jar;C:\wokspace\openfire\build\lib\objenesis.jar;C:\wokspace\openfire\build\lib\pack200task.jar;C:\wokspace\openfire\build\lib\qdox.jar;C:\wokspace\openfire\build\lib\xmltask.jar;C:\wokspace\openfire\build\lib\dist\activation.jar;C:\wokspace\openfire\build\lib\dist\bcpg-jdk15on.jar;C:\wokspace\openfire\build\lib\dist\bcpkix-jdk15on.jar;C:\wokspace\openfire\build\lib\dist\bcprov-jdk15on.jar;C:\wokspace\openfire\build\lib\dist\hsqldb.jar;C:\wokspace\openfire\build\lib\dist\jdic.jar;C:\wokspace\openfire\build\lib\dist\jtds.jar;C:\wokspace\openfire\build\lib\dist\mail.jar;C:\wokspace\openfire\build\lib\dist\mysql.jar;C:\wokspace\openfire\build\lib\dist\postgres.jar;C:\wokspace\openfire\build\lib\dist\servlet.jar;C:\wokspace\openfire\build\lib\dist\slf4j-log4j12.jar;C:\wokspace\openfire\build\lib\merge\commons-codec.jar;C:\wokspace\openfire\build\lib\merge\commons-httpclient.jar;C:\wokspace\openfire\build\lib\merge\commons-lang.jar;C:\wokspace\openfire\build\lib\merge\commons-logging.jar;C:\wokspace\openfire\build\lib\merge\concurrentlinkedhashmap-lru-1.0_jdk5.jar;C:\wokspace\openfire\build\lib\merge\dbutil.jar;C:\wokspace\openfire\build\lib\merge\dom4j.jar;C:\wokspace\openfire\build\lib\merge\jaxen.jar;C:\wokspace\openfire\build\lib\merge\jdom.jar;C:\wokspace\openfire\build\lib\merge\jetty-continuation.jar;C:\wokspace\openfire\build\lib\merge\jetty-http.jar;C:\wokspace\openfire\build\lib\merge\jetty-io.jar;C:\wokspace\openfire\build\lib\merge\jetty-jmx.jar;C:\wokspace\openfire\build\lib\merge\jetty-security.jar;C:\wokspace\openfire\build\lib\merge\jetty-server.jar;C:\wokspace\openfire\build\lib\merge\jetty-servlet.jar;C:\wokspace\openfire\build\lib\merge\jetty-util.jar;C:\wokspace\openfire\build\lib\merge\jetty-webapp.jar;C:\wokspace\openfire\build\lib\merge\jetty-websocket.jar;C:\wokspace\openfire\build\lib\merge\jetty-xml.jar;C:\wokspace\openfire\build\lib\merge\jmdns.jar;C:\wokspace\openfire\build\lib\merge\jsp-api.jar;C:\wokspace\openfire\build\lib\merge\jstl.jar;C:\wokspace\openfire\build\lib\merge\jzlib.jar;C:\wokspace\openfire\build\lib\merge\libidn.jar;C:\wokspace\openfire\build\lib\merge\log4j.jar;C:\wokspace\openfire\build\lib\merge\mina-core.jar;C:\wokspace\openfire\build\lib\merge\mina-filter-compression.jar;C:\wokspace\openfire\build\lib\merge\mina-filter-ssl.jar;C:\wokspace\openfire\build\lib\merge\mina-integration-jmx.jar;C:\wokspace\openfire\build\lib\merge\proxool.jar;C:\wokspace\openfire\build\lib\merge\rome.jar;C:\wokspace\openfire\build\lib\merge\rome-fetcher.jar;C:\wokspace\openfire\build\lib\merge\shaj.jar;C:\wokspace\openfire\build\lib\merge\sitemesh.jar;C:\wokspace\openfire\build\lib\merge\slf4j-api.jar;C:\wokspace\openfire\build\lib\merge\standard.jar;C:\wokspace\openfire\build\lib\merge\stringprep.jar;C:\wokspace\openfire\build\lib\merge\tinder.jar;C:\wokspace\openfire\build\lib\merge\xpp3.jar;C:\wokspace\openfire\build\lib\src\commons-lang-sources.jar;C:\wokspace\openfire\build\lib\src\mina-core-1.1.7-sources.jar;C:\wokspace\openfire\build\lib\src\mina-filter-compression-1.1.7-sources.jar;C:\wokspace\openfire\build\lib\src\mina-filter-ssl-1.1.7-sources.jar;C:\wokspace\openfire\build\lib\src\mina-filter-ssl-1.1.8-SNAPSHOT-sources.jar;C:\wokspace\openfire\build\lib\src\mina-integration-jmx-1.1.7-sources.jar;C:\wokspace\openfire\build\lib\src\slf4j-api-1.5.8-sources.jar;C:\wokspace\openfire\build\lib\src\slf4j-log4j12-1.5.8-sources.jar;C:\wokspace\openfire\build\lib\dist;C:\wokspace\openfire\resources\i18n;C:\wokspace\openfire\resources\jar
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\classes
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\commons-fileupload.jar
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\commons-io.jar
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\dwr.jar
+    cp=C:\Users\nishant.nawarkhede\AppData\Local\Temp\jetty-0.0.0.0-9090-webapp-_-any-\jsp
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\classes
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\commons-fileupload.jar
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\commons-io.jar
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\dwr.jar
+    work dir=C:\Users\nishant.nawarkhede\AppData\Local\Temp\jetty-0.0.0.0-9090-webapp-_-any-\jsp
+    extension dir=C:\Program Files\Java\jre1.8.0_31\lib\ext;C:\Windows\Sun\Java\lib\ext
+    srcDir=C:\Users\nishant.nawarkhede\AppData\Local\Temp\jetty-0.0.0.0-9090-webapp-_-any-\jsp
+   compilerTargetVM=1.5
+   compilerSourceVM=1.5
+    include=org/apache/jsp/login_jsp.java
+
+2015.05.05 17:36:06 org.jivesoftware.util.log.util.CommonsLogFactory - Error compiling file: /C:/Users/nishant.nawarkhede/AppData/Local/Temp/jetty-0.0.0.0-9090-webapp-_-any-/jsp//org/apache/jsp\login_jsp.java     [javac] Compiling 1 source file
+
+
+2015.05.05 17:36:27 org.jivesoftware.util.log.util.CommonsLogFactory - Javac exception 
+Unable to find a javac compiler;
+com.sun.tools.javac.Main is not on the classpath.
+Perhaps JAVA_HOME does not point to the JDK
+	at org.apache.tools.ant.taskdefs.compilers.CompilerAdapterFactory.getCompiler(CompilerAdapterFactory.java:105)
+	at org.apache.tools.ant.taskdefs.Javac.compile(Javac.java:924)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:757)
+	at org.apache.jasper.compiler.AntCompiler.generateClass(AntCompiler.java:219)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:297)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:276)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:264)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:563)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:303)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:314)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:264)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:547)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1359)
+	at com.opensymphony.module.sitemesh.filter.PageFilter.doFilter(PageFilter.java:39)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1330)
+	at org.jivesoftware.util.LocaleFilter.doFilter(LocaleFilter.java:74)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1330)
+	at org.jivesoftware.util.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:50)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1330)
+	at org.jivesoftware.admin.PluginFilter.doFilter(PluginFilter.java:78)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1330)
+	at org.jivesoftware.admin.AuthCheckFilter.doFilter(AuthCheckFilter.java:164)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1330)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:478)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:520)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:941)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:409)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:875)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:250)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:149)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:110)
+	at org.eclipse.jetty.server.Server.handle(Server.java:349)
+	at org.eclipse.jetty.server.HttpConnection.handleRequest(HttpConnection.java:441)
+	at org.eclipse.jetty.server.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:919)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:582)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:218)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:51)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:586)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:44)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:598)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:533)
+	at java.lang.Thread.run(Unknown Source)
+2015.05.05 17:36:27 org.jivesoftware.util.log.util.CommonsLogFactory - Env: Compile: javaFileName=/C:/Users/nishant.nawarkhede/AppData/Local/Temp/jetty-0.0.0.0-9090-webapp-_-any-/jsp//org/apache/jsp\login_jsp.java
+    classpath=/C:/wokspace/openfire/plugins/admin/webapp/WEB-INF/classes/;/C:/wokspace/openfire/plugins/admin/webapp/WEB-INF/lib/commons-fileupload.jar;/C:/wokspace/openfire/plugins/admin/webapp/WEB-INF/lib/commons-io.jar;/C:/wokspace/openfire/plugins/admin/webapp/WEB-INF/lib/dwr.jar;C:\Users\nishant.nawarkhede\AppData\Local\Temp\jetty-0.0.0.0-9090-webapp-_-any-\jsp;C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\classes;C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\commons-fileupload.jar;C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\commons-io.jar;C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\dwr.jar
+    cp=C:\wokspace\openfire\bin;C:\wokspace\openfire\build\lib\ant.jar;C:\wokspace\openfire\build\lib\ant-contrib.jar;C:\wokspace\openfire\build\lib\ant-jive-edition.jar;C:\wokspace\openfire\build\lib\ant-subdirtask.jar;C:\wokspace\openfire\build\lib\cglib-nodep.jar;C:\wokspace\openfire\build\lib\commons-el.jar;C:\wokspace\openfire\build\lib\i4jruntime.jar;C:\wokspace\openfire\build\lib\jasper-compiler.jar;C:\wokspace\openfire\build\lib\jasper-runtime.jar;C:\wokspace\openfire\build\lib\jaxb-api.jar;C:\wokspace\openfire\build\lib\jmock.jar;C:\wokspace\openfire\build\lib\jmock-junit4.jar;C:\wokspace\openfire\build\lib\jmock-legacy.jar;C:\wokspace\openfire\build\lib\junit.jar;C:\wokspace\openfire\build\lib\objenesis.jar;C:\wokspace\openfire\build\lib\pack200task.jar;C:\wokspace\openfire\build\lib\qdox.jar;C:\wokspace\openfire\build\lib\xmltask.jar;C:\wokspace\openfire\build\lib\dist\activation.jar;C:\wokspace\openfire\build\lib\dist\bcpg-jdk15on.jar;C:\wokspace\openfire\build\lib\dist\bcpkix-jdk15on.jar;C:\wokspace\openfire\build\lib\dist\bcprov-jdk15on.jar;C:\wokspace\openfire\build\lib\dist\hsqldb.jar;C:\wokspace\openfire\build\lib\dist\jdic.jar;C:\wokspace\openfire\build\lib\dist\jtds.jar;C:\wokspace\openfire\build\lib\dist\mail.jar;C:\wokspace\openfire\build\lib\dist\mysql.jar;C:\wokspace\openfire\build\lib\dist\postgres.jar;C:\wokspace\openfire\build\lib\dist\servlet.jar;C:\wokspace\openfire\build\lib\dist\slf4j-log4j12.jar;C:\wokspace\openfire\build\lib\merge\commons-codec.jar;C:\wokspace\openfire\build\lib\merge\commons-httpclient.jar;C:\wokspace\openfire\build\lib\merge\commons-lang.jar;C:\wokspace\openfire\build\lib\merge\commons-logging.jar;C:\wokspace\openfire\build\lib\merge\concurrentlinkedhashmap-lru-1.0_jdk5.jar;C:\wokspace\openfire\build\lib\merge\dbutil.jar;C:\wokspace\openfire\build\lib\merge\dom4j.jar;C:\wokspace\openfire\build\lib\merge\jaxen.jar;C:\wokspace\openfire\build\lib\merge\jdom.jar;C:\wokspace\openfire\build\lib\merge\jetty-continuation.jar;C:\wokspace\openfire\build\lib\merge\jetty-http.jar;C:\wokspace\openfire\build\lib\merge\jetty-io.jar;C:\wokspace\openfire\build\lib\merge\jetty-jmx.jar;C:\wokspace\openfire\build\lib\merge\jetty-security.jar;C:\wokspace\openfire\build\lib\merge\jetty-server.jar;C:\wokspace\openfire\build\lib\merge\jetty-servlet.jar;C:\wokspace\openfire\build\lib\merge\jetty-util.jar;C:\wokspace\openfire\build\lib\merge\jetty-webapp.jar;C:\wokspace\openfire\build\lib\merge\jetty-websocket.jar;C:\wokspace\openfire\build\lib\merge\jetty-xml.jar;C:\wokspace\openfire\build\lib\merge\jmdns.jar;C:\wokspace\openfire\build\lib\merge\jsp-api.jar;C:\wokspace\openfire\build\lib\merge\jstl.jar;C:\wokspace\openfire\build\lib\merge\jzlib.jar;C:\wokspace\openfire\build\lib\merge\libidn.jar;C:\wokspace\openfire\build\lib\merge\log4j.jar;C:\wokspace\openfire\build\lib\merge\mina-core.jar;C:\wokspace\openfire\build\lib\merge\mina-filter-compression.jar;C:\wokspace\openfire\build\lib\merge\mina-filter-ssl.jar;C:\wokspace\openfire\build\lib\merge\mina-integration-jmx.jar;C:\wokspace\openfire\build\lib\merge\proxool.jar;C:\wokspace\openfire\build\lib\merge\rome.jar;C:\wokspace\openfire\build\lib\merge\rome-fetcher.jar;C:\wokspace\openfire\build\lib\merge\shaj.jar;C:\wokspace\openfire\build\lib\merge\sitemesh.jar;C:\wokspace\openfire\build\lib\merge\slf4j-api.jar;C:\wokspace\openfire\build\lib\merge\standard.jar;C:\wokspace\openfire\build\lib\merge\stringprep.jar;C:\wokspace\openfire\build\lib\merge\tinder.jar;C:\wokspace\openfire\build\lib\merge\xpp3.jar;C:\wokspace\openfire\build\lib\src\commons-lang-sources.jar;C:\wokspace\openfire\build\lib\src\mina-core-1.1.7-sources.jar;C:\wokspace\openfire\build\lib\src\mina-filter-compression-1.1.7-sources.jar;C:\wokspace\openfire\build\lib\src\mina-filter-ssl-1.1.7-sources.jar;C:\wokspace\openfire\build\lib\src\mina-filter-ssl-1.1.8-SNAPSHOT-sources.jar;C:\wokspace\openfire\build\lib\src\mina-integration-jmx-1.1.7-sources.jar;C:\wokspace\openfire\build\lib\src\slf4j-api-1.5.8-sources.jar;C:\wokspace\openfire\build\lib\src\slf4j-log4j12-1.5.8-sources.jar;C:\wokspace\openfire\build\lib\dist;C:\wokspace\openfire\resources\i18n;C:\wokspace\openfire\resources\jar
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\classes
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\commons-fileupload.jar
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\commons-io.jar
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\dwr.jar
+    cp=C:\Users\nishant.nawarkhede\AppData\Local\Temp\jetty-0.0.0.0-9090-webapp-_-any-\jsp
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\classes
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\commons-fileupload.jar
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\commons-io.jar
+    cp=C:\wokspace\openfire\plugins\admin\webapp\WEB-INF\lib\dwr.jar
+    work dir=C:\Users\nishant.nawarkhede\AppData\Local\Temp\jetty-0.0.0.0-9090-webapp-_-any-\jsp
+    extension dir=C:\Program Files\Java\jre1.8.0_31\lib\ext;C:\Windows\Sun\Java\lib\ext
+    srcDir=C:\Users\nishant.nawarkhede\AppData\Local\Temp\jetty-0.0.0.0-9090-webapp-_-any-\jsp
+   compilerTargetVM=1.5
+   compilerSourceVM=1.5
+    include=org/apache/jsp/login_jsp.java
+
+2015.05.05 17:36:27 org.jivesoftware.util.log.util.CommonsLogFactory - Error compiling file: /C:/Users/nishant.nawarkhede/AppData/Local/Temp/jetty-0.0.0.0-9090-webapp-_-any-/jsp//org/apache/jsp\login_jsp.java     [javac] Compiling 1 source file
+
+
+2015.05.05 17:36:36 org.jivesoftware.openfire.net.SSLConfig - SSLConfig startup problem.
+  storeType: [jks]
+  keyStoreLocation: [C:\wokspace\openfire\resources\security\keystore]
+  keypass: [changeit]
+
+java.io.FileNotFoundException: C:\wokspace\openfire\resources\security\keystore (The system cannot find the path specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.jivesoftware.openfire.net.SSLConfig.<clinit>(SSLConfig.java:108)
+	at org.jivesoftware.openfire.container.AdminConsolePlugin.startup(AdminConsolePlugin.java:138)
+	at org.jivesoftware.openfire.container.AdminConsolePlugin.initializePlugin(AdminConsolePlugin.java:216)
+	at org.jivesoftware.openfire.container.PluginManager.loadPlugin(PluginManager.java:483)
+	at org.jivesoftware.openfire.container.PluginManager.access$1(PluginManager.java:282)
+	at org.jivesoftware.openfire.container.PluginManager$PluginMonitor.run(PluginManager.java:1074)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2015.05.05 17:36:36 org.jivesoftware.openfire.net.SSLConfig - SSLConfig startup problem.
+  storeType: [jks]
+  s2sTrustStoreLocation: [C:\wokspace\openfire\resources\security\truststore]
+  s2sTrustpass: [changeit]
+
+java.io.FileNotFoundException: C:\wokspace\openfire\resources\security\truststore (The system cannot find the path specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.jivesoftware.openfire.net.SSLConfig.<clinit>(SSLConfig.java:121)
+	at org.jivesoftware.openfire.container.AdminConsolePlugin.startup(AdminConsolePlugin.java:138)
+	at org.jivesoftware.openfire.container.AdminConsolePlugin.initializePlugin(AdminConsolePlugin.java:216)
+	at org.jivesoftware.openfire.container.PluginManager.loadPlugin(PluginManager.java:483)
+	at org.jivesoftware.openfire.container.PluginManager.access$1(PluginManager.java:282)
+	at org.jivesoftware.openfire.container.PluginManager$PluginMonitor.run(PluginManager.java:1074)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2015.05.05 17:36:37 org.jivesoftware.openfire.container.AdminConsolePlugin - 
+java.io.IOException
+	at org.jivesoftware.openfire.net.SSLConfig.getKeyStore(SSLConfig.java:284)
+	at org.jivesoftware.openfire.container.AdminConsolePlugin.startup(AdminConsolePlugin.java:138)
+	at org.jivesoftware.openfire.container.AdminConsolePlugin.initializePlugin(AdminConsolePlugin.java:216)
+	at org.jivesoftware.openfire.container.PluginManager.loadPlugin(PluginManager.java:483)
+	at org.jivesoftware.openfire.container.PluginManager.access$1(PluginManager.java:282)
+	at org.jivesoftware.openfire.container.PluginManager$PluginMonitor.run(PluginManager.java:1074)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
