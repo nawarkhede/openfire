@@ -16,9 +16,9 @@ Code is bundled as eclipse project just clone it, and import in eclipse.
 10. Go to project properties Java Build Path > libraries > Add External Jars > and all the jars from following folders,
 
     * ```workspace\openfire\build\lib```
-    *```workspace\openfire\build\lib\dist```
-    *```workspace\openfire\build\lib\merge```
-    *```workspace\openfire\build\lib\src```
+    * ```workspace\openfire\build\lib\dist```
+    * ```workspace\openfire\build\lib\merge```
+    * ```workspace\openfire\build\lib\src```
 11. Refresh the project from eclipse.
 12. Go to run configurations from eclipse and right click on java application create new named openfire now search main class using search button, select ```org.jivesoftware.openfire.starter.ServerStarter``` and click ok.
 13. Go to arguments tab and put VM arguments value as , ```-DopenfireHome="D:\workspaceluna\openfire"```
