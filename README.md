@@ -1,4 +1,4 @@
-# openfire [3.9.3]
+# Tutorial-openfire [3.9.3]
 
 Code is bundled as eclipse project just clone it, and import in eclipse.
 
