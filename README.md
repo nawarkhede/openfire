@@ -2,7 +2,7 @@
 
 Code is bundled as eclipse project just clone it, and import in eclipse.
 
-# Manually setup openfire code to eclipse
+# Tutorial- Manually setup openfire code to eclipse
 
 1. Download openfire source code from http://www.igniterealtime.org/downloads/source.jsp and unzip it.
 2. Create java project in eclipse name it "openfire".
